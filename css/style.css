@@ -1,0 +1,36 @@
+footer {
+  text-align: left;
+  padding: 20px;
+}
+
+/* Image Button Styles */
+.image-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.image-button img {
+  filter: drop-shadow( 0 0 10px blue);
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-button .hover {
+  opacity: 0;
+}
+
+.image-button:hover .hover {
+  opacity: 1;
+}
+
+.image-button:hover .default {
+  opacity: 0;
+}

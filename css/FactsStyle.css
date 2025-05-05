@@ -1,0 +1,205 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  color: white;
+  margin: 0px;
+  padding: 0%;
+  font-size: 1vw; /* Base font size for the page */
+}
+
+/* Header Styles */
+header h1 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: rgb(145, 145, 255);
+  font-size: 6vw; /* Increased font size for header */
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  padding: 05;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 3vw; /* Increased font size for links */
+}
+
+header ul li a:hover {
+  color: rgb(87, 177, 207);
+}
+
+/* Main Section */
+main {
+  overflow: auto;
+}
+
+main img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Content Section */
+.content {
+  text-align: center;
+  overflow: auto;
+  flex: 3;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, transparent 0px, transparent 25vw, #03293a 49vw, black 100%);
+  font-size: 2vw; /* Increased font size for content */
+  filter: drop-shadow( 0 0 10px rgb(0, 0, 0));
+}
+.info ul li strong{
+  color: #87cefa;
+  
+  font-size: 2vw;
+  
+}
+
+.info ul {
+  list-style:None;
+  font-size: 1.75vw;
+  text-align:center;
+  margin-bottom 20px: ;
+}
+
+.info p {
+  text-align: justify;
+  padding: 80px;
+}
+
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-top:50px;
+}
+
+.carousel-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  z-index: 2;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.carousel nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.carousel nav a {
+  pointer-events: auto;
+  color: white;
+  font-size: 3vw;
+  text-decoration: none;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.carousel nav:hover a {
+  opacity: 1;
+}
+
+/* 3D Viewer Container */
+#three-container {
+  width: 90%;
+  max-width: 1000px;
+  aspect-ratio: 4 / 2;
+  margin: 40px auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  background: black;
+  position: relative;
+  z-index: 1;
+}
+
+.three-title {
+  text-align: center;
+  color: #87cefa;
+  font-size: 2vw;
+  margin-top: 40px;
+}
+
+
+
+footer {
+  text-align: left;
+  padding: 20px;
+ 
+}
+
+.image-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.image-button img {
+  filter: drop-shadow( 0 0 10px blue);
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+
+}
+
+.image-button .hover {
+  opacity: 0;
+}
+
+.image-button:hover .hover {
+  opacity: 1;
+}
+
+.image-button:hover .default {
+  opacity: 0;
+}
