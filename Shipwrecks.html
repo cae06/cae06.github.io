@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shipwreck Divers</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/FactsStyle.css"/>
+  <link rel="stylesheet" href="css/MainStyle.css"/>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.153.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.153.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <img src="https://static.vecteezy.com/system/resources/previews/022/967/094/large_2x/the-blue-underwater-sea-with-ai-generated-free-photo.jpg" alt="underwater scene" />
+    <div class="content">
+      <header>
+        <h1>Ship<i class="fa-solid fa-anchor"></i>wreck Divers</h1>
+        <ul>
+          <li><a href="ships.html">Home</a></li>
+          <li><a href="Locations.html">Locations</a></li>
+          <li><a href="Shipwrecks.html">Shipwrecks</a></li>
+          <li><a href="Story.html">Stories</a></li>
+        </ul>
+      </header>
+
+      <div>
+        <h2>Welcome Divers to the Shipwreck Divers</h2>
+        <p>Let's Dive into why you're here shall we!</p>
+      </div>
+
+      <div class="three-title">
+        <h3>Explore the Fishing Vessel of BEAU 
+            (located in Micronesia)
+        </h3>
+      </div>
+      <div id="three-container"></div>
+      <div id="progress-container" style="color: white; text-align:center;">Loading model...</div>
+      <div class="info">
+        <ul>
+            <li><strong>Wreck Type:</strong> Fishing Vessel</li>
+            <li><strong>Location:</strong> Truk Lagoon (Chuuk Lagoon), Micronesia</li>
+            <li><strong>Depth:</strong> Roughly 18 Metres or 59 Feet</li>
+            <li><strong>Accessibility:</strong> Easily accessed for intermediate divers</li>
+            <li><strong>Visibility:</strong> Generally good however not recommended to visit during bad weather conditions</li>
+            <li><strong>Use?:</strong> A Fishing boat turned into Training Vessel</li>
+            <li><strong>How old is it?:</strong> It sunk in February 1944</li>
+            <li><strong>How Did it sink?:</strong> Sunk in a storm</li>
+        </ul>
+        
+        <p>
+            The MV Beau is a lesser-known gem among Truk Lagoon's legendary wrecks.
+            Unlike the Japanese WWII ships that dominate the area’s diving history, the Beau stands out as a modern, civilian vessel—likely sunk in the decades following the war. 
+            Despite its non-military background, the ship is upright position and preserved structure make it a fantastic and accessible dive site for all levels.
+            This wreck is often used by local dive operators as a training site due to its safe depth, clear layout, and minimal current. 
+            It's also a refreshing change of pace for experienced divers seeking something different from the usual WWII wrecks. 
+        </p>
+      </div>
+      <div class="carousel">
+        <nav>
+          <a href="#" id="carouselPrev">&lt;</a>
+          <a href="#" id="carouselNext">&gt;</a>
+        </nav>
+        <div class="carousel-images" id="carouselImages"></div>
+        <p class="carousel-caption" id="carouselCaption"></p>
+      </div>
+
+      <footer>
+        <button class="image-button", onclick="location.href='Shipwrecks.html'">
+            
+          <img class="default" src="img/anglerOff.png" alt="Back to the surface">
+          <img class="hover" src="img/anglerOn.png" alt="Back to the surface">
+        </button>
+    </footer>
+    </div>
+  </main>
+
+  <script type="module" src="js/3DShip.js"></script>
+  <script src="js/imagecarousel.js" defer></script>
+</body>
+</html>
