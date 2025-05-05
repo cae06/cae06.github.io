@@ -1,3 +1,5 @@
+
+
 /* Global Styles */
 html, body {
   height: 100%;
@@ -20,7 +22,7 @@ header ul {
   display: flex;
   justify-content: center;
   gap: 75px;
-  padding: 5px;
+  padding: 5px ;
 }
 
 header ul li a {
@@ -38,7 +40,6 @@ header ul li a:hover {
 /* Main Section */
 main {
   overflow: auto;
-  
 }
 
 main img {
@@ -55,34 +56,5 @@ main img {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(to bottom, transparent 0px, transparent 25vw, #03293a 49vw, black 100%);
-  font-size: 2.5vw; /* Increased font size for content */
-  filter: drop-shadow( 0 0 10px rgb(0, 0, 0));
+  font-size: 2vw; /* Increased font size for content */
 }
-p {
-  font-size: 2vw;
-}
-
-/* Info Section */
-.info {
-  display: flex;
-  gap: 5px;
-}
-
-/* Aside Section */
-aside {
-  flex: auto;
-  border-radius: 8px;
-}
-.links{
-  text-align: right;
-  padding-right: 50px;
-}
-.links ul {
-  text-align: right;
-  list-style: none;
-
-}
-.links ul li a {
-  color: rgb(135, 165, 209);
-}
-
